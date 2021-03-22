@@ -1,12 +1,23 @@
-# angular-cypress-blogtests
-Uma aplicação baseada em blog, utilizando testes E2E com Cypress.
+# dio-angular-cypress-blogtests
+Projeto feito na Digital Innovation One para testes E2E utilizando Cypress em uma aplicação do tipo blog feito em Angular.
 
 ## Executando a Aplicação
-Para executar a aplicação, execute os seguintes passos:
+Para executar a aplicação, execute os seguintes passos no terminal de comando:
 ```bash
-No terminal de comando, digite `ng serve` para iniciar a aplicação.
+1. Instale as dependências:
+npm install
+2. Inicie a aplicação:
+ng serve
 
 Acesse a URL `http://localhost:4200/` para visualizar.
+```
+## Executando os Testes
+Para executar os testes, execute os seguintes passos no terminal de comando:
+```bash
+npm install cypress --save-dev
+npm run cypress
+#para abrir o cypress:
+cypress open
 ```
 ## Scaffolding de Código
 Crie o seu próprio componente na aplicação:
@@ -36,5 +47,5 @@ ng test
 ## Executando Testes E2E
 ```bash
 Digite o comando abaixo para executar testes end-to-end via [Protractor](http://www.protractortest.org/).
-`ng e2e` to execute the end-to-end tests via 
+ng e2e
 ```

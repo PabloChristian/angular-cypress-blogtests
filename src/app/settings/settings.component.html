@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-6 offset-md-3 col-xs-12">
 
-        <h1 class="text-xs-center">Your Settings</h1>
+        <h1 class="text-xs-center">Configurações</h1>
 
         <app-list-errors [errors]="errors"></app-list-errors>
 
@@ -13,21 +13,21 @@
             <fieldset class="form-group">
               <input class="form-control"
                 type="text"
-                placeholder="URL of profile picture"
+                placeholder="URL da sua foto de perfil"
                 formControlName="image" />
             </fieldset>
 
             <fieldset class="form-group">
               <input class="form-control form-control-lg"
                 type="text"
-                placeholder="Username"
+                placeholder="Usuario"
                 formControlName="username" />
             </fieldset>
 
             <fieldset class="form-group">
               <textarea class="form-control form-control-lg"
                 rows="8"
-                placeholder="Short bio about you"
+                placeholder="Descrição sobre você"
                 formControlName="bio">
               </textarea>
             </fieldset>
@@ -42,24 +42,23 @@
             <fieldset class="form-group">
               <input class="form-control form-control-lg"
                 type="password"
-                placeholder="New Password"
+                placeholder="Nova Senha"
                 formControlName="password" />
             </fieldset>
 
             <button class="btn btn-lg btn-primary pull-xs-right"
               type="submit">
-              Update Settings
+              Atualizar Configurações
             </button>
 
           </fieldset>
         </form>
 
-        <!-- Line break for logout button -->
         <hr />
 
         <button class="btn btn-outline-danger"
           (click)="logout()">
-          Or click here to logout.
+          Clique aqui para efetuar logout
         </button>
 
       </div>

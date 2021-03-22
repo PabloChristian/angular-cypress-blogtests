@@ -9,13 +9,13 @@
           <span [hidden]="!canModify">
           <a class="btn btn-sm btn-outline-secondary"
              [routerLink]="['/editor', article.slug]">
-            <i class="ion-edit"></i> Edit Article
+            <i class="ion-edit"></i> Editar Artigo
           </a>
 
           <button class="btn btn-sm btn-outline-danger"
             [ngClass]="{disabled: isDeleting}"
             (click)="deleteArticle()">
-            <i class="ion-trash-a"></i> Delete Article
+            <i class="ion-trash-a"></i> Deletar Artigo
           </button>
         </span>
 
@@ -28,7 +28,7 @@
           <app-favorite-button
             [article]="article"
             (toggle)="onToggleFavorite($event)">
-            {{ article.favorited ? 'Unfavorite' : 'Favorite' }} Article <span class="counter">({{ article.favoritesCount }})</span>
+            {{ article.favorited ? 'Desfavoritar' : 'Favoritar' }} Artigo <span class="counter">({{ article.favoritesCount }})</span>
           </app-favorite-button>
         </span>
 
@@ -61,13 +61,13 @@
           <span [hidden]="!canModify">
           <a class="btn btn-sm btn-outline-secondary"
              [routerLink]="['/editor', article.slug]">
-            <i class="ion-edit"></i> Edit Article
+            <i class="ion-edit"></i> Editar Artigo
           </a>
 
           <button class="btn btn-sm btn-outline-danger"
             [ngClass]="{disabled: isDeleting}"
             (click)="deleteArticle()">
-            <i class="ion-trash-a"></i> Delete Article
+            <i class="ion-trash-a"></i> Remover Artigo
           </button>
         </span>
 
@@ -80,7 +80,7 @@
           <app-favorite-button
             [article]="article"
             (toggle)="onToggleFavorite($event)">
-            {{ article.favorited ? 'Unfavorite' : 'Favorite' }} Article <span class="counter">({{ article.favoritesCount }})</span>
+            {{ article.favorited ? 'Desfavoritar' : 'Favoritar' }} Artigo <span class="counter">({{ article.favoritesCount }})</span>
           </app-favorite-button>
         </span>
 
@@ -96,7 +96,7 @@
             <fieldset [disabled]="isSubmitting">
               <div class="card-block">
                 <textarea class="form-control"
-                  placeholder="Write a comment..."
+                  placeholder="Escreva um comentário..."
                   rows="3"
                   [formControl]="commentControl"
                 ></textarea>
@@ -112,7 +112,7 @@
         </div>
 
         <div *appShowAuthed="false">
-          <a [routerLink]="['/login']">Sign in</a> or <a [routerLink]="['/register']">sign up</a> to add comments on this article.
+          <a [routerLink]="['/login']">Logar</a> or <a [routerLink]="['/register']">Register</a> para adicionar comentários no artigo.
         </div>
 
         <app-article-comment

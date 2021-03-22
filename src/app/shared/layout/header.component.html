@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light">
   <div class="container">
-    <a class="navbar-brand" routerLink="/">conduit</a>
+    <a class="navbar-brand" routerLink="/">MeuBlog</a>
 
     <!-- Show this for logged out users -->
     <ul *appShowAuthed="false"
@@ -17,7 +17,7 @@
         <a class="nav-link"
           routerLink="/login"
           routerLinkActive="active">
-          Sign in
+          Logar
         </a>
       </li>
 
@@ -25,13 +25,12 @@
         <a class="nav-link"
           routerLink="/register"
           routerLinkActive="active">
-          Sign up
+          Registrar
         </a>
       </li>
 
     </ul>
 
-    <!-- Show this for logged in users -->
     <ul *appShowAuthed="true"
       class="nav navbar-nav pull-xs-right">
 
@@ -48,7 +47,7 @@
         <a class="nav-link"
           routerLink="/editor"
           routerLinkActive="active">
-          <i class="ion-compose"></i>&nbsp;New Article
+          <i class="ion-compose"></i>&nbsp;Novo Artigo
         </a>
       </li>
 
@@ -56,7 +55,7 @@
         <a class="nav-link"
           routerLink="/settings"
           routerLinkActive="active">
-          <i class="ion-gear-a"></i>&nbsp;Settings
+          <i class="ion-gear-a"></i>&nbsp;Configurações
         </a>
       </li>
 
