@@ -38,14 +38,3 @@ ng build
 Os artefatos de construção serão armazenados no diretório 'dist/'.
 Utiliza a flag '--prod' para uma construção em ambiente de produção.
 ```
-## Executando Testes Unitários
-
-```bash
-Digite o comando abaixo para executar os testes via [Karma] (https://karma-runner.github.io):
-ng test
-```
-## Executando Testes E2E
-```bash
-Digite o comando abaixo para executar testes end-to-end via [Protractor](http://www.protractortest.org/).
-ng e2e
-```
