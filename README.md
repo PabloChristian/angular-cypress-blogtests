@@ -2,8 +2,8 @@
 Projeto feito na Digital Innovation One para testes E2E utilizando Cypress em uma aplicação do tipo blog feito em Angular.
 
 ## Tecnologias
-Angular
-Cypress
+* Angular
+* Cypress
 
 ## Executando a Aplicação
 Para executar a aplicação, execute os seguintes passos no terminal de comando:
